@@ -1,4 +1,19 @@
-<a uiSref="personal" uiSrefActive="active">Personal</a>
-<a uiSref="about" uiSrefActive="active">About</a>
-  
-<ui-view></ui-view>
+<section style="background:#efefe9;">
+    <div class="container">
+        <div class="board">
+            <!-- Navigation Area (Circular Tabs) -->
+            <msw-navbar></msw-navbar>
+            <!-- End Navigation Area (Circular Tabs) -->
+
+            <!-- Content Area -->
+            <div class="tab-content">
+                <!-- Nested view  -->
+                <ui-view></ui-view>
+            </div>
+            <!-- End Content Area -->
+        </div>
+
+        <!-- For Debugging: show our valid formData -->
+        <pre>{{ formData | json }}</pre>
+    </div>
+</section>
