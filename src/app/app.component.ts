@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'  
 })
-export class AppComponent {
-  title = 'app';
+export class AppComponent implements OnInit{
+  title = 'Multi-Step Wizard';
+
+  constructor() {}
+
+  ngOnInit() {
+    console.log(this.title + 'loaded');
+  }
 }
