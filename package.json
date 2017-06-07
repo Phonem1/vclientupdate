@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "simple" : "http-server dist",
-    "electron": "electron .",
+    "electron": "\"npm run build\" && electron .",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
